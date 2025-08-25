@@ -1,0 +1,1028 @@
+<div id="sanaexpert-chat-widget">
+    <!-- Circle Icon -->
+    <div id="sanaexpert-circle-icon" class="circle-icon">
+        Hey! Was brauchst du? 😄
+    </div>
+
+    <!-- Chat Button -->
+    <div id="sanaexpert-chat-button" class="chat-button">
+        <img src="https://assets.streamlinehq.com/image/private/w_240,h_240,ar_1/f_auto/v1/icons/chat-bubble/chat-bubble-oval-notification-9sspoyy6jdke0q6z55u01t.png/chat-bubble-oval-notification-lyp5qd8jdlaojh8ha996a.png" style="padding:3px" alt="SanaExpert Chat">
+    </div>
+
+    <!-- Chat Container -->
+    <div id="sanaexpert-chat-container" class="chat-container">
+        <div class="chat-header">
+            <img src="https://lps.sanaexpert.de/wp-content/uploads/2022/07/sanaexpert_white.png" alt="SanaExpert Logo" class="header-logo">
+            <span style="font-size: medium;">Customer Support</span>
+            <button class="close-button">&times;</button>
+        </div>
+        
+        <!-- Contact Options Container -->
+        <div id="contact-options-container" class="contact-options-container">
+          <img src="https://lps.sanaexpert.de/wp-content/uploads/2022/07/sanaexpert_white.png" alt="SanaExpert Logo" class="header-logo" style="height: 60px; margin-bottom: 10px;">
+
+            <h3 class="options-title">Warum bevorzugen Sie Kontakt?</h3>
+            
+        
+            
+            <!-- Instagram Button -->
+            <a id="instagram-link" href="http://instagram.com/sanaexpert.es" target="_blank" class="contact-option-button instagram-button">
+                <div class="option-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="contact-svg">
+                        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                    </svg>
+                </div>
+                <span>Instagram</span>
+            </a>
+
+              OR
+            <!-- Web Chat Button -->
+            <div id="web-chat-button" class="contact-option-button webchat-button">
+                <div class="option-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="contact-svg">
+                        <path d="M256 32C114.6 32 0 125.1 0 240c0 47.6 19.9 91.2 52.9 126.3C38 405.7 7 439.1 6.5 439.5c-6.6 7-8.4 17.2-4.6 26S14.4 480 24 480c61.5 0 110-25.7 139.1-46.3C192 442.8 223.2 448 256 448c141.4 0 256-93.1 256-208S397.4 32 256 32zm0 368c-26.7 0-53.1-4.1-78.4-12.1l-22.7-7.2-19.5 13.8c-14.3 10.1-33.9 21.4-57.5 29 7.3-12.1 14.4-25.7 19.9-40.2l10.6-28.1-20.6-21.8C69.7 314.1 48 282.2 48 240c0-88.2 93.3-160 208-160s208 71.8 208 160-93.3 160-208 160z"/>
+                    </svg>
+                </div>
+                <span>Web Chat</span>
+            </div>
+      </div>
+        
+        <div class="chat-messages" id="chat-messages">
+            <div class="messages-container"></div>
+            <div class="loading-dots">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Schreiben Sie Ihre Nachricht...">
+            <button id="emoji-button" class="emoji-button">☺</button>
+            <div id="emoji-picker" class="emoji-picker">
+                <div class="emoji-container">
+                    <span class="emoji">😊</span>
+                    <span class="emoji">😂</span>
+                    <span class="emoji">👍</span>
+                    <span class="emoji">❤️</span>
+                    <span class="emoji">👋</span>
+                    <span class="emoji">🙏</span>
+                    <span class="emoji">🎉</span>
+                    <span class="emoji">👏</span>
+                    <span class="emoji">🤔</span>
+                    <span class="emoji">😍</span>
+                    <span class="emoji">🙂</span>
+                    <span class="emoji">😎</span>
+                    <span class="emoji">🌿</span>
+                    <span class="emoji">💚</span>
+                    <span class="emoji">✅</span>
+                    <span class="emoji">⭐</span>
+                </div>
+            </div>
+            <button id="send-button">➤</button>
+        </div>
+    </div>
+</div>
+</body>
+
+<style>
+    /* Circle Icon */
+.circle-icon {
+    position: fixed;
+    bottom: 90px; /* Adjust this value to position it above the chat button */
+    right: 20px;
+    
+    padding: 10px 15px;
+    border-radius: 50px;
+    color: #007700;
+    font-size: 14px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 9997; /* Ensure it's below the chat button */
+}
+
+/* Add corner tail */
+.circle-icon::after {
+    content: "  ";
+    position: absolute;
+    bottom: -7px;
+    right: 14px;
+    width: 0;
+    height: 0;
+   border-top: 10px solid #ffffff; /* Same as background */
+    border-left: 10px solid transparent;
+   /* filter: drop-shadow(0 -1px 1px rgba(0,0,0,0.1)); */
+}
+
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 119, 0, 0.3);
+    }
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(0, 119, 0, 0);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 119, 0, 0);
+    }
+}
+
+/* Chat Widget Base Styles */
+#sanaexpert-chat-widget {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+#sanaexpert-chat-widget * {
+    box-sizing: border-box;
+    font-size:medium;
+}
+
+/* Chat Button */
+.chat-button {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(140, 182, 62);
+    box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+    cursor: pointer;
+    z-index: 9998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, background-color 0.3s;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+.chat-button:hover {
+    transform: scale(1.1);
+    background-color: rgb(130, 172, 52);
+}
+
+.chat-button img {
+    width: 35px;
+    height: auto;
+}
+
+/* Chat Container */
+.chat-container {
+    position: fixed;
+    bottom: 50px;
+    right: 90px;
+    width: 380px;
+    height: calc(100vh - 120px);
+    max-height: 700px;
+    min-height: 400px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.25);
+    z-index: 9999;
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Contact Options Container */
+.contact-options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    flex: 1;
+    gap: 15px;
+  color:#fff;
+    overflow-y: auto;
+  background: linear-gradient(135deg, rgb(140, 182, 62) 0%, #106800 100%);
+}
+
+.options-title {
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.contact-option-button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px 30px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    gap: 15px;
+  color:#ffffff !important;
+}
+
+.contact-option-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.whatsapp-button {
+    border:1px solid #eeeeee;
+
+  border-radius: 20px;
+  color: #eeeeee;
+ 
+  box-shadow: 0 4px 8px rgba(0, 128, 0, 0.4); /* Green shadow */
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  display:flex;
+  flex-direction:horizontal;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.instagram-button {
+  border:1px solid #eeeeee;
+display:flex;
+  flex-direction:horizontal;
+  border-radius: 20px;
+ 
+  color: #eeeeee;
+  box-shadow: 0 4px 8px rgba(0, 128, 0, 0.4); /* Green shadow */
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.instagram-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 128, 0, 0.5); /* Slightly stronger shadow on hover */
+}
+
+
+.webchat-button {
+    border:1px solid #eeeeee;
+  
+  border-radius: 20px;
+  color: #eeeeee;
+  box-shadow: 0 4px 8px rgba(0, 128, 0, 0.4); /* Green shadow */
+  padding: 10px 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.option-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+
+.contact-svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}
+
+/* Chat Header */
+.chat-header {
+    background: linear-gradient(135deg, rgb(140, 182, 62) 0%, #106800 100%);
+    color: #fff;
+    padding: 15px;
+    border-radius: 16px 16px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    height: 60px;
+    min-height: 60px;
+}
+
+.header-logo {
+    height: 24px;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: x-large !important;
+    cursor: pointer;
+    padding: 0 5px;
+    transition: transform 0.2s ease;
+}
+
+.close-button:hover {
+    transform: scale(1.1);
+}
+
+/* Chat Messages Area */
+.chat-messages {
+    flex: 1;
+    padding: 15px;
+    background-color: #f9f9f9;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: calc(100% - 120px);
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    display: none; /* Hide initially */
+}
+
+.messages-container {
+    display: flex;
+    flex-direction: column;
+    min-height: min-content;
+    gap: 10px;
+}
+
+/* Message Styles */
+.message {
+    max-width: 90%;
+    margin-bottom: 15px;
+    padding: 12px 16px;
+    border-radius: 18px;
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.message.user {
+    align-self: flex-end;
+    background: linear-gradient(135deg, #0d8500 0%, #106800 100%);
+    color: #fff;
+    margin-left: 10%;
+    border-bottom-right-radius: 4px;
+}
+
+.message.bot {
+    align-self: flex-start;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-right: 10%;
+    border-bottom-left-radius: 4px;
+}
+
+/* Loading Animation */
+.loading-dots {
+    display: none;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border-radius: 18px;
+    border-bottom-left-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: fit-content;
+    align-self: flex-start;
+}
+
+.loading-dots span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #0d8500;
+    margin: 0 3px;
+    opacity: 0;
+    animation: loadingDots 1.4s infinite;
+}
+
+.loading-dots span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loading-dots span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+/* Chat Input Area */
+.chat-input {
+    display: none; /* Hide initially */
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    position: relative;
+    z-index: 1;
+    height: 60px;
+    min-height: 60px;
+    align-items: center;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 24px;
+    outline: none;
+    font-size: small !important;
+    transition: all 0.3s ease;
+    height: 40px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.chat-input input:focus {
+    border-color: #0d8500;
+    box-shadow: 0 0 0 2px rgba(13,133,0,0.1);
+}
+
+.chat-input input::placeholder {
+    color: #999;
+}
+
+/* Emoji Button and Picker */
+.emoji-button {
+    background: none;
+    color: #0d8500;
+    border: none;
+    font-size: x-large !important;
+    cursor: pointer;
+    margin: 0 4px;
+    padding: 5px;
+    border-radius: 50%;
+    transition: transform 0.2s;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emoji-button:hover {
+    transform: scale(1.1);
+    background-color: #f0f0f0;
+}
+
+.emoji-picker {
+    position: absolute;
+    bottom: 65px;
+    right: 70px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+    padding: 10px;
+    display: none;
+    z-index: 9999;
+    width: 220px;
+}
+
+.emoji-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.emoji {
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.emoji:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.1);
+}
+
+.chat-input button#send-button {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, rgb(140, 182, 62) 0%, #106800 100%);
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 40px;
+    white-space: nowrap;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(13,133,0,0.2);
+}
+
+.chat-input button#send-button:hover {
+    background: linear-gradient(135deg, #0b7000 0%, #0c5000 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(13,133,0,0.3);
+}
+
+.chat-input button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Formatted Content Styles */
+.formatted-content {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.section {
+    margin: 10px 0;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.section-title {
+    color: #0d8500;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.bullet-list, .number-list {
+    margin: 5px 0 5px 20px;
+    padding: 0;
+}
+
+.bullet-item, .number-item {
+    margin: 3px 0;
+    position: relative;
+}
+
+.highlight {
+    background: #e8f5e9;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* Source Attribution */
+.source {
+    font-size: x-small !important;
+    color: #666;
+    margin-top: 5px;
+    font-style: italic;
+    text-align: right;
+}
+.bot-below {
+    font-size: 10px;
+    color: #666;
+    margin-top: 5px;
+    font-style: italic;
+    text-align: right;
+}
+
+/* Link Styles */
+.message a {
+    color: #0d8500;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.message.user a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(10px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+@keyframes loadingDots {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+    .chat-container {
+        width: 92%;
+        height: calc(100vh - 180px);
+        max-height: none;
+        right: 4%;
+        left: 4%;
+        bottom: 70px;
+    }
+    
+    .chat-button {
+        width: 50px;
+        height: 50px;
+        bottom: 10px;
+        right: 10px;
+    }
+    
+    .chat-messages {
+        height: calc(100% - 120px);
+    }
+    
+    .chat-button img {
+        width: 30px;
+    }
+    
+    .message {
+        max-width: 85%;
+    }
+    
+    .chat-input button {
+        padding: 10px 15px;
+    }
+    
+    .emoji-picker {
+        right: 15px;
+        width: 200px;
+    }
+    
+    .contact-option-button {
+        padding: 12px 15px;
+    }
+}
+
+/* Scrollbar Styling */
+.chat-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat-messages::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+    background: #0d8500;
+    border-radius: 3px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb:hover {
+    background: #086400;
+}    
+
+/* Added styles for different screen sizes */
+@media (min-height: 800px) {
+   
+}
+
+@media (max-height: 600px) {
+    .chat-container {
+        height: calc(100vh - 80px);
+        bottom: 70px;
+    }
+    
+    .chat-header {
+        height: 50px;
+        min-height: 50px;
+        padding: 8px 12px;
+    }
+    
+    .chat-input {
+        height: 50px;
+        min-height: 50px;
+    }
+    
+    .chat-messages {
+        height: calc(100% - 100px);
+    }
+}
+
+/* Landscape mode for mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .chat-container {
+        height: calc(100vh - 60px);
+        bottom: 50px;
+    }
+    
+    .chat-button {
+        width: 40px;
+        height: 40px;
+        bottom: 5px;
+    }
+    
+    .chat-button img {
+        width: 25px;
+    }
+}
+
+/* Added styles for very large screens */
+@media (min-width: 1200px) and (min-height: 1000px) {
+    .chat-container {
+        width: 400px;
+        max-height: 800px;
+    }
+}
+</style>
+
+<script>
+    var customerEmail = "{{ customer.email | escape }}"; // Ensure it's safe for JavaScript
+    var customerName = "{{ customer.first_name | escape }} {{ customer.last_name | escape }}";
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Chat Widget
+    function initChatWidget() {
+        try {
+            let userId = localStorage.getItem('sanaexpert_user_id') || `user_${Math.floor(Math.random() * 100000)}`;
+            localStorage.setItem('sanaexpert_user_id', userId);
+        } catch (error) {
+            console.error('LocalStorage Error:', error);
+        }
+
+        // Cached selectors for performance
+        const chatContainer = document.getElementById('sanaexpert-chat-container');
+        const chatButton = document.getElementById('sanaexpert-chat-button');
+        const circleIcon = document.getElementById('sanaexpert-circle-icon');
+        const closeButton = document.querySelector('.close-button');
+        const messagesContainer = document.querySelector('.messages-container');
+        const userInput = document.getElementById('user-input');
+        const sendButton = document.getElementById('send-button');
+        const loadingDots = document.querySelector('.loading-dots');
+        const emojiButton = document.getElementById('emoji-button');
+        const emojiPicker = document.getElementById('emoji-picker');
+        const emojis = document.querySelectorAll('.emoji');
+        const chatMessages = document.querySelector('.chat-messages');
+        const contactOptionsContainer = document.getElementById('contact-options-container');
+        const webChatButton = document.getElementById('web-chat-button');
+        const chatInput = document.querySelector('.chat-input');
+
+        // Toggle Chat Visibility
+        function toggleChat() {
+            if (circleIcon) circleIcon.style.display = 'none';
+            if (chatContainer.style.display === 'flex') {
+                chatContainer.style.display = 'none';
+            } else {
+                chatContainer.style.display = 'flex';
+                // Show contact options instead of direct chat
+                if (contactOptionsContainer) contactOptionsContainer.style.display = 'flex';
+                if (chatMessages) chatMessages.style.display = 'none';
+                if (chatInput) chatInput.style.display = 'none';
+            }
+        }
+
+        // Start Web Chat
+        function startWebChat() {
+            if (contactOptionsContainer) contactOptionsContainer.style.display = 'none';
+            if (chatMessages) chatMessages.style.display = 'block';
+            if (chatInput) chatInput.style.display = 'flex';
+            
+            // Show initial greeting only if there are no messages yet
+            if (messagesContainer && messagesContainer.children.length === 0) {
+                sendInitialGreeting();
+            }
+        }
+
+        if (chatButton) chatButton.addEventListener('click', toggleChat);
+        if (circleIcon) circleIcon.addEventListener('click', toggleChat);
+        if (closeButton) closeButton.addEventListener('click', function() {
+            chatContainer.style.display = 'none';
+        });
+        if (webChatButton) webChatButton.addEventListener('click', startWebChat);
+
+        // Toggle Emoji Picker
+        if (emojiButton) {
+            emojiButton.addEventListener('click', function(e) {
+                e.stopPropagation();
+                emojiPicker.style.display = emojiPicker.style.display === 'block' ? 'none' : 'block';
+            });
+        }
+
+        // Close emoji picker when clicking outside
+        document.addEventListener('click', function(e) {
+            if (emojiPicker && !emojiPicker.contains(e.target) && e.target !== emojiButton) {
+                emojiPicker.style.display = 'none';
+            }
+        });
+
+        // Insert emoji into input field
+        emojis.forEach(emoji => {
+            emoji.addEventListener('click', function() {
+                const currentText = userInput.value;
+                const selectedEmoji = this.textContent;
+                userInput.value = currentText + selectedEmoji;
+                userInput.focus();
+            });
+        });
+
+        // Message Formatting
+        function formatBotMessage(message) {
+            if (message.trim().startsWith('<')) return message;
+            let formattedContent = '<div class="formatted-content">';
+            let sections = message.split(/(?:\r?\n){2,}/);
+            sections.forEach(section => {
+                if (section.trim()) {
+                    let lines = section.trim().split('\n');
+                    let formattedSection = '';
+
+                    if (lines[0].match(/^\d+\./)) {
+                        formattedSection = formatList(lines, 'ol', 'number-item');
+                    } else if (lines[0].match(/^[-•]/)) {
+                        formattedSection = formatList(lines, 'ul', 'bullet-item');
+                    } else if (lines[0].includes(':')) {
+                        formattedSection = formatTitledSection(lines);
+                    } else {
+                        formattedSection = formatParagraph(lines);
+                    }
+
+                    formattedContent += formattedSection;
+                }
+            });
+            formattedContent += '</div>';
+            return formattedContent;
+        }
+
+        function formatList(lines, tag, className) {
+            return `<div class="section"><${tag} class="${tag}-list">` +
+                lines.map(line => `<li class="${className}">${formatInlineContent(line.replace(/^\d+\.\s*|[-•]\s*/, ''))}</li>`).join('') +
+                `</${tag}></div>`;
+        }
+
+        function formatTitledSection(lines) {
+            const titleParts = lines[0].split(':');
+            const title = titleParts[0];
+            let content = titleParts.slice(1).join(':');
+            
+            if (lines.length > 1) {
+                content += lines.slice(1).join(' ');
+            }
+            
+            return `<div class="section"><div class="section-title">${title.trim()}</div><div>${formatInlineContent(content.trim())}</div></div>`;
+        }
+
+        function formatParagraph(lines) {
+            return `<div class="section">${formatInlineContent(lines.join(' ').trim())}</div>`;
+        }
+
+        function formatInlineContent(text) {
+            // Enhanced to retain emojis in formatting
+            return text
+                .replace(/€\d+(?:\.\d{2})?/g, match => `<span class="highlight">${match}</span>`)
+                .replace(/\*(.*?)\*/g, '<strong>$1</strong>')
+                .replace(/(https?:\/\/[^\s]+)/g, '<a href="$1" target="_blank">$1</a>');
+        }
+
+        // Append and Scroll Messages
+        function appendMessage(sender, message, source = false) {
+            let messageElement = document.createElement('div');
+            messageElement.className = `message ${sender}`;
+            messageElement.innerHTML = sender === 'bot' ? formatBotMessage(message) : message;
+            if (source) {
+                let sourceElement = document.createElement('div');
+                sourceElement.className = 'source';
+                sourceElement.textContent = 'Generated by AI';
+                messageElement.appendChild(sourceElement);
+            }
+            messagesContainer.appendChild(messageElement);
+            scrollToBottom();
+        }
+
+        function scrollToBottom() {
+            if (chatMessages) {
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+        }
+
+        function showLoading() { 
+            if (loadingDots) {
+                loadingDots.style.display = 'block'; 
+                scrollToBottom();
+            }
+        }
+        
+        function hideLoading() { 
+            if (loadingDots) {
+                loadingDots.style.display = 'none'; 
+            }
+        }
+
+        function sendInitialGreeting() {
+            appendMessage('bot', "Hallo, ich bin Maria von SanaExpert. 🌿 Wie kann ich Ihnen heute helfen?");
+        }
+
+        // Send Message
+        function sendMessage() {
+            if (!userInput) return;
+            
+            let message = userInput.value.trim();
+            if (!message) return;
+
+            if (userInput) userInput.disabled = true;
+            if (sendButton) sendButton.disabled = true;
+            
+            appendMessage('user', message);
+            if (userInput) userInput.value = '';
+            showLoading();
+            
+            // Get current page URL
+            const currentUrl = window.location.href;
+
+            // Create AJAX request without jQuery
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', 'https://sanaexpertai.centralindia.cloudapp.azure.com/chat');
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.onload = function() {
+                hideLoading();
+                if (xhr.status === 200) {
+                    const data = JSON.parse(xhr.responseText);
+                    if (data.response) {
+                        appendMessage('bot', data.response, true);
+                    }
+                } else {
+                    appendMessage('bot', 'Sorry, da ist etwas schiefgelaufen. Bitte versuche es erneut.');
+                }
+                if (userInput) userInput.disabled = false;
+                if (sendButton) sendButton.disabled = false;
+                if (userInput) userInput.focus();
+            };
+            xhr.onerror = function() {
+                hideLoading();
+                appendMessage('bot', 'Sorry, da ist etwas schiefgelaufen. Bitte versuche es erneut.');
+                if (userInput) userInput.disabled = false;
+                if (sendButton) sendButton.disabled = false;
+            };
+            
+            try {
+                const userId = localStorage.getItem('sanaexpert_user_id');
+                xhr.send(JSON.stringify({ 
+                    user_id: userId, 
+                    message: message,
+                    cemail: customerEmail,
+                    cname: customerName,
+                    page_url: currentUrl  // Include the current page URL
+                }));
+            } catch (e) {
+                console.error('Error sending message:', e);
+                hideLoading();
+                appendMessage('bot', 'Sorry, da ist etwas schiefgelaufen. Bitte versuche es erneut.');
+                if (userInput) userInput.disabled = false;
+                if (sendButton) sendButton.disabled = false;
+            }
+        }
+
+        // Event Listeners
+        if (sendButton) {
+            sendButton.addEventListener('click', sendMessage);
+        }
+        
+        if (userInput) {
+            userInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    sendMessage();
+                }
+            });
+        }
+    }
+
+    // Initialize chat widget when DOM is fully loaded
+    initChatWidget();
+});
+</script>
+
+                          <script>
+  document.getElementById('instagram-link').addEventListener('click', function (e) {
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    var username = 'sanaexpert.es';
+    var appLink = 'instagram://user?username=' + username;
+    var webLink = 'https://www.instagram.com/' + username + '/';
+
+    // Detect if on mobile
+    var isMobile = /android|iphone|ipad|ipod/i.test(userAgent);
+
+    if (isMobile) {
+      // Try opening the Instagram app
+      window.location = appLink;
+
+      // Fallback to web after short delay in case app doesn't open
+      setTimeout(function () {
+        window.location = webLink;
+      }, 1500);
+    } else {
+      // On desktop, just open the Instagram profile in a new tab
+      window.open(webLink, '_blank');
+    }
+
+    e.preventDefault(); // Prevent default anchor behavior
+  });
+</script>
