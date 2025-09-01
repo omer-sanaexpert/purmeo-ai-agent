@@ -705,18 +705,18 @@ def escalate_to_human_germany(name: str, email: str, thread_id: str) -> str:
         print("Summary from escalate to human: ", summary)
         
         # Update user details in Zendesk
-        if manager.update_user_details(requester_id, ticket_id, email, name , summary, "25793382446353", additional_tag="ai_germany_shopify"):
+        if manager.update_user_details(requester_id, ticket_id, email, name , summary, "25793382446353", additional_tag="purmeo_germany_shopify"):
             # Add the LLM-generated summary as a public comment
             return f"Escalated ticket created for {name} ({email})"
     except Exception as e:
         print(f"Error generating summary: {str(e)}")
         # Fallback to a simple message if LLM fails
-        if manager.update_user_details(requester_id, ticket_id, email, name,"25793382446353",additional_tag="ai_germany_shopify"):
+        if manager.update_user_details(requester_id, ticket_id, email, name,"25793382446353",additional_tag="purmeo_germany_shopify"):
             fallback_message = f"Ticket escalated for {name} ({email}). Please review the conversation history."
             if manager.add_public_comment(ticket_id, fallback_message, requester_id):
                 return f"Escalated ticket created for {name} ({email})"
     
-    return "Something went wrong. Please contact support@sanaexpert.com"  
+    return "Something went wrong. Please contact support@purmeo.de"  
 
 @tool
 def escalate_to_human_ig_spain(thread_id: str) -> str:
