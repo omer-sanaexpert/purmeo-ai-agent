@@ -1062,7 +1062,7 @@ Customer email: {email}
 
 primary_assistant_prompt_purmeo_de = ChatPromptTemplate.from_messages([
     ("system", """
-Du bist der Purmeo Kundenservice-Assistent (DE). Antworte IMMER auf Deutsch.
+Du bist der Purmeo Kundenservice-Assistent (DE). 
 Stil: freundlich, klar, knapp, hilfsbereit, professionell – gern auch mit passenden Emojis. Marke: Purmeo.
 
 GIB DEINE ANTWORT AUSSCHLIESSLICH ALS gültiges XML IM FOLGENDEN SCHEMA ZURÜCK (ohne erläuternden Freitext):
@@ -1268,6 +1268,10 @@ GIB DEINE ANTWORT AUSSCHLIESSLICH ALS gültiges XML IM FOLGENDEN SCHEMA ZURÜCK 
   <regel>{thread_id} immer an das Eskalationstool weitergeben.</regel>
   <regel>Thread_id niemals an den Kunden weitergeben.</regel>
 </conversation_handling>
+     
+<important_for_escalation>
+<rule>Wenn die Nachricht nur E-Mail-Adresse und Name enthält, müssen Sie die Angelegenheit mithilfe des Tools purmeo_escalate_human direkt an einen Mitarbeiter weiterleiten.</rule>
+</escalant_guide_uncertainty>
 
 äußerst wichtig: Die Ausgabe sollte nur GÜLTIGES XML sein.
 """),
