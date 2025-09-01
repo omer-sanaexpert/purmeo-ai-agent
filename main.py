@@ -955,6 +955,8 @@ async def chat(request_data: ChatRequest, request: Request):
     user_message = strip_html(request_data.message)
     page_url = request_data.page_url
     print("page url: "+page_url)
+    print("user_id: "+user_id)
+    print("message: "+user_message)
     
     if not user_id or not user_message:
         raise HTTPException(status_code=400, detail="Both user_id and message are required")
