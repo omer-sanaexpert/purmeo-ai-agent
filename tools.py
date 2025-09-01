@@ -652,7 +652,7 @@ def escalate_to_human_italy(name: str, email: str, thread_id: str) -> str:
 
 # need to change the assignee id for germany 
 @tool
-def escalate_to_human_germany(name: str, email: str, thread_id: str) -> str:
+def purmeo_escalate_human(name: str, email: str, thread_id: str) -> str:
     """Escalate the conversation to a human agent.
 
     Args:

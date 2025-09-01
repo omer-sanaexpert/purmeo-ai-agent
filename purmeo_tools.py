@@ -1,6 +1,7 @@
 # --- Purmeo(DE) tools: thin wrappers so they’re separate from SanaExpert tools ---
 import os
 from dotenv import load_dotenv
+from fastapi import logger
 from langchain_core.tools import tool
 from pinecone import Pinecone, ServerlessSpec
 from sentence_transformers import SentenceTransformer
@@ -81,9 +82,3 @@ def purmeo_query_kb(q: str) -> dict:
     txt = query_knowledgebase_sanaexpert(q)  # swap to purmeo KB when available
     return {"brand": PURMEO_BRAND, "country": PURMEO_COUNTRY, "text": txt}
 
-@tool
-def purmeo_escalate_human(note: str = "") -> dict:
-    """Purmeo-DE: Escalate to human agent (separate escalation pipe)"""
-    # Use German escalation path (or make a new one if you prefer):
-    resp = escalate_to_human_germany(note or "Bitte um Übernahme: Purmeo-DE")
-    return {"brand": PURMEO_BRAND, "country": PURMEO_COUNTRY, "status": "requested", "resp": resp}

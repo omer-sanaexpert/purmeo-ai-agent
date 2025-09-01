@@ -155,3 +155,16 @@ scp -i ~/.ssh/sanaexpertvm_key.pem -r ./ azureuser@20.40.52.119:/home/azureuser/
 
 screen -S streamlit
 streamlit run ticket_custom_dashboard.py --server.port 8501 --server.address 0.0.0.0
+
+
+New session
+tmux new -s mysession
+
+🔌 Detach from a tmux Session
+While inside tmux, press:
+Ctrl+b d
+This detaches and leaves the session running.
+📜 List Sessions
+tmux ls
+🔄 Attach (Reattach) to a Session
+tmux attach -t mysession
