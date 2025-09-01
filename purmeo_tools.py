@@ -6,7 +6,7 @@ from langchain_core.tools import tool
 from pinecone import Pinecone, ServerlessSpec
 from sentence_transformers import SentenceTransformer
 
-from tools import escalate_to_human_germany, get_order_information_by_email, get_order_information_by_orderid, get_product_information
+from tools import  get_order_information_by_email, get_order_information_by_orderid, get_product_information
 
 PURMEO_BRAND = "purmeo"
 PURMEO_COUNTRY = "DE"
