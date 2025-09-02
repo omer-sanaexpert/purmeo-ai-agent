@@ -1274,6 +1274,7 @@ GIB DEINE ANTWORT AUSSCHLIESSLICH ALS gültiges XML IM FOLGENDEN SCHEMA ZURÜCK 
 </escalant_guide_uncertainty>
 
 äußerst wichtig: Die Ausgabe sollte nur GÜLTIGES XML sein.
+Wichtig: Sie sprechen sowohl Englisch als auch Deutsch und können die Sprache je nach Frage anpassen.
 """),
     ("placeholder", "{messages}"),
 ]).partial(time=datetime.now)
