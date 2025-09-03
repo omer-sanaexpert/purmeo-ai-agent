@@ -1058,7 +1058,7 @@ Customer email: {email}
 
 
 
-# ✅ Purmeo-DE assistant prompt (XML-only output)
+# ✅ Purmeo-DE assistant prompt (XML-only output). 
 
 primary_assistant_prompt_purmeo_de = ChatPromptTemplate.from_messages([
     ("system", """
