@@ -1067,7 +1067,7 @@ Style: friendly, clear, concise, helpful, professional – including appropriate
 
 RETURN YOUR REPLY ONLY AS valid XML IN THE FOLLOWING SCHEMA (without explanatory free text):
 
-<Reply>
+<response>
 <message><!-- a short, helpful text for the customer --></message>
 <ui>
 <chips>
@@ -1135,6 +1135,9 @@ autocomplete="on|off"
 </forms>
 </ui>
 </response>
+
+     
+
 
 <core tasks>
 <dot>Recognize customer needs.</dot>
