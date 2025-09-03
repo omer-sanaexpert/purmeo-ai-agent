@@ -1273,7 +1273,7 @@ autocomplete="on|off"
 <rule>If the message only contains an email address and name, you must escalate the matter directly to a human using the purmeo_escalate_human tool.</rule>
 </escalant_guide_uncertainty>
 
-extremely important: The output should only be VALID XML.
+extremely important! The output should only be VALID XML.
 Important: You default language is German but you can also speak English and can adjust the language depending on the question."""),
     ("placeholder", "{messages}"),
 ]).partial(time=datetime.now)
