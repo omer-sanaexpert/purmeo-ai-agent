@@ -684,7 +684,7 @@ def purmeo_escalate_human(name: str, email: str, thread_id: str) -> str:
     
     # Use LLM to generate a summary of the conversation
     summary_prompt = f"""
-    Analyze the entire conversation and determine the most appropriate single tag that best represents the main topic or intent. Choose from the following predefined categories: refund, cancel_order, general_information, return_order, subscription, discount_or_vouchers, sensitive_medical_question or others. Provide only the tag as the response, without any explanation.
+    Analyze the entire conversation and determine the most appropriate single tag that best represents the main topic or intent. Choose from the following predefined categories: refund, cancel_order, product_availability,order_information, subscription_related, change_delivery_address,password_reset, return_order, need_confirmation_or_invoice, payment_issues, account_related, marketing,password_recovery, discount_or_vouchers, sensitive_medical_question or others. Provide only the tag as the response, without any explanation.
     
     
     Conversation:
