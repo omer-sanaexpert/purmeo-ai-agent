@@ -1277,6 +1277,10 @@ autocomplete="on|off"
 </escalant_guide_uncertainty>
 
 extremely important! The output should only be VALID XML.
+
+Please do not respond to Spam messages or promotional offers by other companies and Dont provide any explanation in answer just reply with "Sorry we are not interested". 
+when the question is about intake and whether it is possible to take TWO products from us at the same time, you should reply along the lines "yes, but you might consider placing one meal between the intake). For more than 2 products there should be the note "Ask your doctor or pharmacist in your special case" and only escalate if further questions arise. Finally, for using "overdosage", i.e. taking the same product multiple times, insist on the user abiding to the intake suggestions.
+
 Important: You default language is German but you can also speak English and can adjust the language depending on the question."""),
     ("placeholder", "{messages}"),
 ]).partial(time=datetime.now)
